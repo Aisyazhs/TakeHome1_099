@@ -5,14 +5,64 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>Hiling</title>
+        <title>Hiling Jiwa</title>
         
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            *{
+                padding: 5px;
+                margin: 15px;
+            } 
+            
+            body{
+                font-family: 'Cagliostro';
+                font-size: 15px;
+                background-color: papayawhip;
+            }
+            
+            fieldset {
+                background-color: darksalmon;
+                border: 3px solid #264653;
+                 width: 400px;
+                 float: center;
+            }
+            legend {
+                background-color: #264653;
+                color: white;
+                padding: 5px 10px;
+            }
+            input {
+                margin: 5px;
+            }
+        </style>
         
     </head>
-    <body>
+    <body >
+    <center>
+        <h1 style="color: #264653;">
+            Healing Kuyy!!</h1>
+        
+        <form method="post" enctype="multipart/form-data" action="/view">
+          
+        <fieldset>
+            <legend align="center">Form Hiling:</legend>
+            <br>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="nama">
+            <br><br/>
+                
+            <label for="loc">Lokasi:</label>
+            <input type="text" id="loc" name="lokasi">
+            <br><br/>
+            
+            <label for="pic">Gambar:</label>
+            <input type="file" id="pic" name="gambar" accept="image/*"/>
+            <br><br/>  
+            
+                <input style="color: maroon" type="submit" value="Save">
+        </fieldset>
+    </form>
        
     </body>
 </html>

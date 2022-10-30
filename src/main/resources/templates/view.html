@@ -8,11 +8,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>View</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="stylee.css" />
+        
+     <style>
+         body{
+                font-family: 'Roboto Mono', monospace;
+                font-size: 10px;
+                background-color: skyblue;
+         }
+         
+    </style>
     </head>
     
     <body>
+    <center>
+        <h1 style="color: lightcoral; font-size:32px; font-weight: Bold";> Hasil Tampilan <h1/>
+            <hr/>
+        <p>Nama :
+            <l th:text="${nama}"></l></p><br/>
         
+        <p>Lokasi:
+            <l th:text="${lokasi}"></l></p><br/>
+        
+         <img th:src="${gmb}"/><br/>
     </body>
     
 </html>
